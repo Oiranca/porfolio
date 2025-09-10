@@ -1,16 +1,22 @@
 ---
-
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import Projects from '../components/Projects.astro';
+import Collaboration from '../components/Collaboration.astro';
+import Skills from '../components/Skills.astro';
+import Footer from '../components/Footer.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Portafolio Samuel - Desarrollador Full Stack" description="Portafolio personal de Samuel, un desarrollador full-stack apasionado especializado en tecnologías web modernas, React, TypeScript y Node.js.">
+	<Navigation />
+	<main>
+		<Hero />
+		<About />
+		<Projects />
+		<Collaboration />
+		<Skills />
+	</main>
+	<Footer />
+</Layout>

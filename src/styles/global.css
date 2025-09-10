@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-blue-600 rounded-sm;
+  }
+}

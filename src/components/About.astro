@@ -1,0 +1,108 @@
+---
+import { MapPin, Calendar, Code2 } from 'lucide-astro';
+---
+
+<section id="about" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="order-2 lg:order-1">
+                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">Acerca de Mí</h2>
+
+                <div class="prose prose-lg text-slate-700 mb-8">
+                    <p class="mb-6">
+                        Soy un desarrollador full-stack curioso por la tecnología y el desarrollo
+                        en general.
+                    </p>
+
+                    <p class="mb-6">
+                        Mi viaje en tecnología comenzó con mi padre, que hacía sus proyecto en
+                        Basic, luego ví a mi hermano destacar desarrollador profesional. Todo
+                        esto más mi pasión por el mundo IT hizo que con 36 años, siendo padre y
+                        trabjando me aventurara a estudiar el ciclo superior de <b>
+                            Desarrollo Aplicaciones Multiplataforma</b
+                        > y a día de hoy sigo formandome porque es un mundo que me apasiona.
+                    </p>
+
+                    <p>
+                        Soy una persona que siempre está abierto ayudar, ya sea en proyecto como el
+                        de <b>AdoptaUnJunior</b> o <b>en proyectos personales de amigos </b>, porque
+                        una de las cosas que siempre he creido que ayudar es una de las mejores
+                        formas de aprender.
+                    </p>
+                </div>
+
+                <div class="grid sm:grid-cols-3 gap-6 mb-8">
+                    <div class="flex items-center space-x-3">
+                        <div
+                            class="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center"
+                        >
+                            <MapPin size={20} class="text-blue-600" />
+                        </div>
+                        <div>
+                            <p class="text-sm font-medium text-slate-500">Ubicación</p>
+                            <p class="text-slate-900 font-medium">Remoto</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center space-x-3">
+                        <div
+                            class="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center"
+                        >
+                            <Calendar size={20} class="text-blue-600" />
+                        </div>
+                        <div>
+                            <p class="text-sm font-medium text-slate-500">Experiencia</p>
+                            <p class="text-slate-900 font-medium">4+ Años</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center space-x-3">
+                        <div
+                            class="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center"
+                        >
+                            <Code2 size={20} class="text-blue-600" />
+                        </div>
+                        <div>
+                            <p class="text-sm font-medium text-slate-500">Enfoque</p>
+                            <p class="text-slate-900 font-medium">Full Stack</p>
+                        </div>
+                    </div>
+                </div>
+
+              {/*   <a
+                    href="/resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center px-6 py-3 bg-slate-900 text-white rounded-lg hover:bg-slate-800 transition-colors font-medium"
+                >
+                    Descargar CV
+                </a> */}
+            </div>
+
+            <div class="order-1 lg:order-2">
+                <div class="relative">
+                    <div class="w-full max-w-md mx-auto">
+                        <div
+                            class="aspect-square rounded-2xl bg-gradient-to-br from-blue-400 to-purple-500 p-1"
+                        >
+                            <div
+                                class="w-full h-full rounded-2xl bg-slate-200 flex items-center justify-center"
+                            >
+                                <div class="text-center">
+                                   
+                                    <img src="/avatar/Avatar.webp" alt="Foto de Samuel" class="w-full h-full mx-w-{400px} mx-h-{400px} rounded-2xl" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="absolute -bottom-6 -right-6 w-24 h-24 bg-blue-600 rounded-full flex items-center justify-center shadow-lg"
+                    >
+                        <Code2 size={32} class="text-white" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

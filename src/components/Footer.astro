@@ -1,0 +1,158 @@
+---
+import { Mail, Github, Linkedin, Twitter, Heart, ExternalLink } from 'lucide-astro';
+---
+
+<footer id="contact" class="bg-slate-900 text-white py-20">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+      <div class="lg:col-span-2">
+        <h3 class="text-2xl font-bold mb-4">Construyamos Algo Increíble</h3>
+        <p class="text-slate-300 mb-6 leading-relaxed">
+          Siempre estoy interesado en nuevas oportunidades y proyectos emocionantes. 
+          Ya seas una startup buscando construir tu primer producto o una 
+          empresa establecida queriendo mejorar tu presencia digital, ¡hablemos!
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-3">
+          <a 
+            href="mailto:contact@example.com" 
+            class="inline-flex items-center px-5 py-2.5 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors font-medium text-sm"
+          >
+            <Mail size={18} class="mr-2" />
+            Contáctame
+          </a>
+          
+          <a 
+            href="/resume.pdf" 
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center px-5 py-2.5 border border-slate-600 text-white rounded-md hover:border-slate-400 hover:bg-slate-800 transition-colors font-medium text-sm"
+          >
+            <ExternalLink size={18} class="mr-2" />
+            Descargar CV
+          </a>
+        </div>
+      </div>
+      
+      <div>
+        <h4 class="text-lg font-semibold mb-4">Enlaces Rápidos</h4>
+        <ul class="space-y-3">
+          <li>
+            <a 
+              href="#about" 
+              class="text-slate-300 hover:text-white transition-colors"
+            >
+              Acerca de Mí
+            </a>
+          </li>
+          <li>
+            <a 
+              href="#projects" 
+              class="text-slate-300 hover:text-white transition-colors"
+            >
+              Proyectos
+            </a>
+          </li>
+          <li>
+            <a 
+              href="#collaboration" 
+              class="text-slate-300 hover:text-white transition-colors"
+            >
+              Colaboraciones
+            </a>
+          </li>
+          <li>
+            <a 
+              href="#skills" 
+              class="text-slate-300 hover:text-white transition-colors"
+            >
+              Habilidades
+            </a>
+          </li>
+        </ul>
+      </div>
+      
+      <div>
+        <h4 class="text-lg font-semibold mb-4">Conecta</h4>
+        <div class="flex space-x-4">
+          <a 
+            href="https://github.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-slate-700 transition-colors"
+            aria-label="Perfil de GitHub"
+          >
+            <Github size={20} />
+          </a>
+          
+          <a 
+            href="https://linkedin.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-slate-700 transition-colors"
+            aria-label="Perfil de LinkedIn"
+          >
+            <Linkedin size={20} />
+          </a>
+          
+          <a 
+            href="https://twitter.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-slate-700 transition-colors"
+            aria-label="Perfil de Twitter"
+          >
+            <Twitter size={20} />
+          </a>
+          
+          <a 
+            href="mailto:contact@example.com" 
+            class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-slate-700 transition-colors"
+            aria-label="Enviar Correo"
+          >
+            <Mail size={20} />
+          </a>
+        </div>
+        
+        <div class="mt-6">
+          <p class="text-slate-400 text-sm mb-2">Disponible para trabajo freelance</p>
+          <div class="flex items-center">
+            <div class="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
+            <span class="text-sm text-slate-300">Actualmente abierto a nuevos proyectos</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="border-t border-slate-800 pt-8">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="flex items-center space-x-2 mb-4 md:mb-0">
+          <span class="text-slate-400">Construido con</span>
+          <Heart size={16} class="text-red-500" />
+          <span class="text-slate-400">usando</span>
+          <a 
+            href="https://astro.build" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="text-blue-400 hover:text-blue-300 transition-colors font-medium"
+          >
+            Astro
+          </a>
+          <span class="text-slate-400">&</span>
+          <a 
+            href="https://tailwindcss.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="text-blue-400 hover:text-blue-300 transition-colors font-medium"
+          >
+            Tailwind CSS
+          </a>
+        </div>
+        
+        <p class="text-slate-400 text-sm">
+          © {new Date().getFullYear()} Portafolio Samuel. Todos los derechos reservados.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
