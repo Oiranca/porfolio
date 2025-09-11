@@ -3,188 +3,215 @@ import { ExternalLink, Github, Zap, Users, Globe } from 'lucide-astro';
 ---
 
 <section id="projects" class="py-20 bg-slate-50">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6">
-    <div class="text-center mb-16">
-      <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
-        Proyectos Destacados
-      </h2>
-      <p class="text-lg text-slate-600 max-w-2xl mx-auto">
-        Aquí tienes algunos de mis proyectos recientes que muestran mis habilidades y pasión por crear 
-        experiencias digitales excepcionales.
-      </p>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">Proyectos Personales</h2>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+                Aquí tienes algunos de mis proyectos son de mis comienzos en el del desarrollo. Pero
+                siempre los tengo presentes para recordar que siempre puedo mejorar.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <article
+                class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow overflow-hidden group"
+            >
+                <div
+                    class="aspect-video bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center"
+                >
+                    <img
+                        src="/logo/myWhatsapp.webp"
+                        alt="Logo de my whatsapp clone"
+                        class="w-40 h-40 object-cover rounded-full"
+                    />
+                </div>
+
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Landing imitando Whatsapp</h3>
+
+                    <p class="text-slate-600 mb-4">
+                        Landing sin funcionalidades, la cree para practicar mis conocimientos en
+                        SCSS y HTML. Es un proyecto personal que me ayuda a recordar mis comienzos.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span
+                            class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium"
+                        >
+                            React
+                        </span>
+                        <span
+                            class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium"
+                        >
+                            Sass
+                        </span>
+                    </div>
+
+                    <div class="flex items-center space-x-4">
+                        <a
+                            href="https://github.com/Oiranca/whatsapp-clone"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="flex items-center space-x-2 text-slate-600 hover:text-blue-600 transition-colors"
+                            aria-label="Ver código fuente en GitHub"
+                        >
+                            <Github size={18} />
+                            <span class="text-sm font-medium">Código</span>
+                        </a>
+
+                        <a
+                            href="https://mywhtasppclone.samuelromeroarbelo.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="flex items-center space-x-2 text-slate-600 hover:text-blue-600 transition-colors"
+                            aria-label="Ver demo en vivo"
+                        >
+                            <ExternalLink size={18} />
+                            <span class="text-sm font-medium">Demo</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <article
+                class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow overflow-hidden group"
+            >
+                <div
+                    class="aspect-video bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center"
+                >
+                    <img
+                        src="/logo/moviesforworld.webp"
+                        alt="Logo de movies for world"
+                        class="w-40 h-40 object-cover rounded-full bg-gradient-to-br from-white to-gray-300 p-2"
+                    />
+                </div>
+
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Buscador de películas</h3>
+
+                    <p class="text-slate-600 mb-4">
+                        Buscador de películas con API de The Movie Database. Es un proyecto personal
+                        que me ayuda a practicar mis conocimientos en React, Redux y Sass.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span
+                            class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium"
+                        >
+                            React
+                        </span>
+                        <span
+                            class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium"
+                        >
+                            Redux
+                        </span>
+                        <span
+                            class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm font-medium"
+                        >
+                            Sass
+                        </span>
+                    </div>
+
+                    <div class="flex items-center space-x-4">
+                        <a
+                            href="https://github.com/Oiranca/movies_for_world"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="flex items-center space-x-2 text-slate-600 hover:text-blue-600 transition-colors"
+                            aria-label="Ver código fuente en GitHub"
+                        >
+                            <Github size={18} />
+                            <span class="text-sm font-medium">Código</span>
+                        </a>
+
+                        <a
+                            href="https://example.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="flex items-center space-x-2 text-slate-600 hover:text-blue-600 transition-colors"
+                            aria-label="Ver demo en vivo"
+                        >
+                            <ExternalLink size={18} />
+                            <span class="text-sm font-medium">Demo</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <article
+                class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow overflow-hidden group"
+            >
+                <div
+                    class="aspect-video bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center"
+                >
+                    <Users size={48} class="text-white" />
+                </div>
+
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">
+                        Dashboard de Redes Sociales
+                    </h3>
+
+                    <p class="text-slate-600 mb-4">
+                        Dashboard de análisis para gestión de redes sociales con visualización de
+                        datos, funciones de programación y reportes completos.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span
+                            class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium"
+                        >
+                            React
+                        </span>
+                        <span
+                            class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm font-medium"
+                        >
+                            Next.js
+                        </span>
+                        <span
+                            class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium"
+                        >
+                            PostgreSQL
+                        </span>
+                    </div>
+
+                    <div class="flex items-center space-x-4">
+                        <a
+                            href="https://github.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="flex items-center space-x-2 text-slate-600 hover:text-blue-600 transition-colors"
+                            aria-label="Ver código fuente en GitHub"
+                        >
+                            <Github size={18} />
+                            <span class="text-sm font-medium">Código</span>
+                        </a>
+
+                        <a
+                            href="https://multiply.samuelromeroarbelo.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="flex items-center space-x-2 text-slate-600 hover:text-blue-600 transition-colors"
+                            aria-label="Ver demo en vivo"
+                        >
+                            <ExternalLink size={18} />
+                            <span class="text-sm font-medium">Demo</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="text-center mt-12">
+            <a
+                href="https://github.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center space-x-2 px-6 py-3 border-2 border-blue-600 text-blue-600 rounded-lg hover:bg-blue-600 hover:text-white transition-colors font-medium"
+            >
+                <Github size={20} />
+                <span>Ver Todos los Proyectos</span>
+            </a>
+        </div>
     </div>
-    
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <article class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow overflow-hidden group">
-        <div class="aspect-video bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
-          <Globe size={48} class="text-white" />
-        </div>
-        
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-slate-900 mb-2">
-            Plataforma E-Commerce
-          </h3>
-          
-          <p class="text-slate-600 mb-4">
-            Solución e-commerce full-stack con autenticación de usuarios, procesamiento de pagos, 
-            y panel de administración. Construida con tecnologías modernas para rendimiento óptimo.
-          </p>
-          
-          <div class="flex flex-wrap gap-2 mb-4">
-            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
-              TypeScript
-            </span>
-            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">
-              React
-            </span>
-            <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm font-medium">
-              Node.js
-            </span>
-          </div>
-          
-          <div class="flex items-center space-x-4">
-            <a 
-              href="https://github.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              class="flex items-center space-x-2 text-slate-600 hover:text-blue-600 transition-colors"
-              aria-label="Ver código fuente en GitHub"
-            >
-              <Github size={18} />
-              <span class="text-sm font-medium">Código</span>
-            </a>
-            
-            <a 
-              href="https://example.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              class="flex items-center space-x-2 text-slate-600 hover:text-blue-600 transition-colors"
-              aria-label="Ver demo en vivo"
-            >
-              <ExternalLink size={18} />
-              <span class="text-sm font-medium">Demo</span>
-            </a>
-          </div>
-        </div>
-      </article>
-      
-      <article class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow overflow-hidden group">
-        <div class="aspect-video bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center">
-          <Zap size={48} class="text-white" />
-        </div>
-        
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-slate-900 mb-2">
-            App de Gestión de Tareas
-          </h3>
-          
-          <p class="text-slate-600 mb-4">
-            Aplicación colaborativa de gestión de tareas con actualizaciones en tiempo real, 
-            funciones de equipo y capacidades avanzadas de filtrado.
-          </p>
-          
-          <div class="flex flex-wrap gap-2 mb-4">
-            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
-              Vue.js
-            </span>
-            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">
-              Nuxt.js
-            </span>
-            <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm font-medium">
-              Firebase
-            </span>
-          </div>
-          
-          <div class="flex items-center space-x-4">
-            <a 
-              href="https://github.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              class="flex items-center space-x-2 text-slate-600 hover:text-blue-600 transition-colors"
-              aria-label="Ver código fuente en GitHub"
-            >
-              <Github size={18} />
-              <span class="text-sm font-medium">Código</span>
-            </a>
-            
-            <a 
-              href="https://example.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              class="flex items-center space-x-2 text-slate-600 hover:text-blue-600 transition-colors"
-              aria-label="Ver demo en vivo"
-            >
-              <ExternalLink size={18} />
-              <span class="text-sm font-medium">Demo</span>
-            </a>
-          </div>
-        </div>
-      </article>
-      
-      <article class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow overflow-hidden group">
-        <div class="aspect-video bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center">
-          <Users size={48} class="text-white" />
-        </div>
-        
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-slate-900 mb-2">
-            Dashboard de Redes Sociales
-          </h3>
-          
-          <p class="text-slate-600 mb-4">
-            Dashboard de análisis para gestión de redes sociales con visualización de datos, 
-            funciones de programación y reportes completos.
-          </p>
-          
-          <div class="flex flex-wrap gap-2 mb-4">
-            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
-              React
-            </span>
-            <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm font-medium">
-              Next.js
-            </span>
-            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">
-              PostgreSQL
-            </span>
-          </div>
-          
-          <div class="flex items-center space-x-4">
-            <a 
-              href="https://github.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              class="flex items-center space-x-2 text-slate-600 hover:text-blue-600 transition-colors"
-              aria-label="Ver código fuente en GitHub"
-            >
-              <Github size={18} />
-              <span class="text-sm font-medium">Código</span>
-            </a>
-            
-            <a 
-              href="https://example.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              class="flex items-center space-x-2 text-slate-600 hover:text-blue-600 transition-colors"
-              aria-label="Ver demo en vivo"
-            >
-              <ExternalLink size={18} />
-              <span class="text-sm font-medium">Demo</span>
-            </a>
-          </div>
-        </div>
-      </article>
-    </div>
-    
-    <div class="text-center mt-12">
-      <a 
-        href="https://github.com" 
-        target="_blank" 
-        rel="noopener noreferrer"
-        class="inline-flex items-center space-x-2 px-6 py-3 border-2 border-blue-600 text-blue-600 rounded-lg hover:bg-blue-600 hover:text-white transition-colors font-medium"
-      >
-        <Github size={20} />
-        <span>Ver Todos los Proyectos</span>
-      </a>
-    </div>
-  </div>
 </section>
