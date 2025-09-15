@@ -6,7 +6,7 @@ export interface Props {
   description?: string;
 }
 
-const { title, description = "Portafolio personal mostrando proyectos, habilidades y experiencia" } = Astro.props;
+const { title, description = "Web personal de Samuel Romero Arbelo mostrando proyectos, habilidades y experiencia" } = Astro.props;
 ---
 
 <!doctype html>
@@ -15,7 +15,7 @@ const { title, description = "Portafolio personal mostrando proyectos, habilidad
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
