@@ -1,5 +1,5 @@
 ---
-import { Code2, Database, Globe, Smartphone, Cloud, Zap } from 'lucide-astro';
+import { Code2, Database, Globe, Smartphone, Cloud, Zap, Square, SquareCode } from 'lucide-astro';
 ---
 
 <section id="skills" class="py-20 bg-slate-50">
@@ -9,159 +9,35 @@ import { Code2, Database, Globe, Smartphone, Cloud, Zap } from 'lucide-astro';
         Habilidades & Tecnologías
       </h2>
       <p class="text-lg text-slate-600 max-w-2xl mx-auto">
-        Trabajo con tecnologías y herramientas modernas para crear aplicaciones escalables, eficientes, 
-        y fáciles de usar en todo el stack.
+       Aquí muestro algunas de las tecnologías y herramientas que uso para desarrollar mis proyectos.
       </p>
     </div>
     
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-      <div class="bg-white rounded-xl p-8 shadow-md hover:shadow-lg transition-shadow">
-        <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
-          <Code2 size={32} class="text-blue-600" />
-        </div>
-        
-        <h3 class="text-xl font-bold text-slate-900 mb-4">Desarrollo Frontend</h3>
-        <p class="text-slate-600 mb-6">
-          Creando interfaces de usuario responsivas e interactivas con frameworks y librerías modernos.
-        </p>
-        
-        <div class="space-y-3">
-          <div class="flex justify-between items-center">
-            <span class="text-sm font-medium text-slate-700">React / Next.js</span>
-            <div class="w-24 bg-slate-200 rounded-full h-2">
-              <div class="bg-blue-600 h-2 rounded-full" style="width: 95%"></div>
-            </div>
-          </div>
-          
-          <div class="flex justify-between items-center">
-            <span class="text-sm font-medium text-slate-700">Vue.js / Nuxt.js</span>
-            <div class="w-24 bg-slate-200 rounded-full h-2">
-              <div class="bg-blue-600 h-2 rounded-full" style="width: 90%"></div>
-            </div>
-          </div>
-          
-          <div class="flex justify-between items-center">
-            <span class="text-sm font-medium text-slate-700">TypeScript</span>
-            <div class="w-24 bg-slate-200 rounded-full h-2">
-              <div class="bg-blue-600 h-2 rounded-full" style="width: 92%"></div>
-            </div>
-          </div>
-          
-          <div class="flex justify-between items-center">
-            <span class="text-sm font-medium text-slate-700">Tailwind CSS</span>
-            <div class="w-24 bg-slate-200 rounded-full h-2">
-              <div class="bg-blue-600 h-2 rounded-full" style="width: 88%"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="bg-white rounded-xl p-8 shadow-md hover:shadow-lg transition-shadow">
-        <div class="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mb-6">
-          <Database size={32} class="text-green-600" />
-        </div>
-        
-        <h3 class="text-xl font-bold text-slate-900 mb-4">Desarrollo Backend</h3>
-        <p class="text-slate-600 mb-6">
-          Construyendo APIs robustas y aplicaciones del lado del servidor con enfoque en rendimiento y seguridad.
-        </p>
-        
-        <div class="space-y-3">
-          <div class="flex justify-between items-center">
-            <span class="text-sm font-medium text-slate-700">Node.js / Express</span>
-            <div class="w-24 bg-slate-200 rounded-full h-2">
-              <div class="bg-green-600 h-2 rounded-full" style="width: 90%"></div>
-            </div>
-          </div>
-          
-          <div class="flex justify-between items-center">
-            <span class="text-sm font-medium text-slate-700">Python / Django</span>
-            <div class="w-24 bg-slate-200 rounded-full h-2">
-              <div class="bg-green-600 h-2 rounded-full" style="width: 85%"></div>
-            </div>
-          </div>
-          
-          <div class="flex justify-between items-center">
-            <span class="text-sm font-medium text-slate-700">PostgreSQL</span>
-            <div class="w-24 bg-slate-200 rounded-full h-2">
-              <div class="bg-green-600 h-2 rounded-full" style="width: 88%"></div>
-            </div>
-          </div>
-          
-          <div class="flex justify-between items-center">
-            <span class="text-sm font-medium text-slate-700">MongoDB</span>
-            <div class="w-24 bg-slate-200 rounded-full h-2">
-              <div class="bg-green-600 h-2 rounded-full" style="width: 82%"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="bg-white rounded-xl p-8 shadow-md hover:shadow-lg transition-shadow">
-        <div class="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mb-6">
-          <Cloud size={32} class="text-purple-600" />
-        </div>
-        
-        <h3 class="text-xl font-bold text-slate-900 mb-4">DevOps & Nube</h3>
-        <p class="text-slate-600 mb-6">
-          Desplegando y gestionando aplicaciones con infraestructura de nube moderna y prácticas CI/CD.
-        </p>
-        
-        <div class="space-y-3">
-          <div class="flex justify-between items-center">
-            <span class="text-sm font-medium text-slate-700">AWS / Azure</span>
-            <div class="w-24 bg-slate-200 rounded-full h-2">
-              <div class="bg-purple-600 h-2 rounded-full" style="width: 80%"></div>
-            </div>
-          </div>
-          
-          <div class="flex justify-between items-center">
-            <span class="text-sm font-medium text-slate-700">Docker</span>
-            <div class="w-24 bg-slate-200 rounded-full h-2">
-              <div class="bg-purple-600 h-2 rounded-full" style="width: 85%"></div>
-            </div>
-          </div>
-          
-          <div class="flex justify-between items-center">
-            <span class="text-sm font-medium text-slate-700">GitHub Actions</span>
-            <div class="w-24 bg-slate-200 rounded-full h-2">
-              <div class="bg-purple-600 h-2 rounded-full" style="width: 78%"></div>
-            </div>
-          </div>
-          
-          <div class="flex justify-between items-center">
-            <span class="text-sm font-medium text-slate-700">Vercel / Netlify</span>
-            <div class="w-24 bg-slate-200 rounded-full h-2">
-              <div class="bg-purple-600 h-2 rounded-full" style="width: 90%"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    
     
     <div class="grid md:grid-cols-3 gap-8">
-      <div class="text-center">
+     <div class="bg-white text-center rounded-xl p-8 shadow-md hover:shadow-lg transition-shadow">
         <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
           <Globe size={40} class="text-blue-600" />
         </div>
-        <h3 class="text-lg font-bold text-slate-900 mb-2">Tecnologías Web</h3>
-        <p class="text-slate-600">HTML5, CSS3, SASS, WebPack, Vite, Progressive Web Apps</p>
+        <h3 class="text-lg font-bold text-slate-900 mb-2">Desarrollo Frontend</h3>
+        <p class="text-slate-600">React, Next.js, Astro, Tailwind, TypeScript, HTML, CSS, Sass, Testing Library</p>
       </div>
       
-      <div class="text-center">
+     <div class="bg-white text-center rounded-xl p-8 shadow-md hover:shadow-lg transition-shadow">
         <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-          <Smartphone size={40} class="text-green-600" />
+          <SquareCode size={40} class="text-green-600" />
         </div>
-        <h3 class="text-lg font-bold text-slate-900 mb-2">Desarrollo Móvil</h3>
-        <p class="text-slate-600">React Native, Flutter, Diseño Responsivo, Enfoque Mobile-First</p>
+        <h3 class="text-lg font-bold text-slate-900 mb-2">Desarrollo Backend</h3>
+        <p class="text-slate-600">Node.js, Express, NestJS, MongoDB, PostgreSQL, Supabase, Jest</p>
       </div>
       
-      <div class="text-center">
+     <div class="bg-white text-center rounded-xl p-8 shadow-md hover:shadow-lg transition-shadow">
         <div class="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
           <Zap size={40} class="text-orange-600" />
         </div>
-        <h3 class="text-lg font-bold text-slate-900 mb-2">Herramientas & Flujo de Trabajo</h3>
-        <p class="text-slate-600">Git, VS Code, Figma, Postman, Librerías de Testing, Agile</p>
+        <h3 class="text-lg font-bold text-slate-900 mb-2">Herramientas</h3>
+        <p class="text-slate-600">Git, VS Code, Cursor, Figma, Postman</p>
       </div>
     </div>
   </div>
